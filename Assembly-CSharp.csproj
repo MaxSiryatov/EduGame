@@ -42,6 +42,7 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\NewScript.cs" />
+     <Compile Include="Assets\Movements.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Scenes" />
      <Reference Include="UnityEngine">

@@ -42,7 +42,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\NewScript.cs" />
+     <Compile Include="Assets\item.cs" />
      <Compile Include="Assets\Movements.cs" />
+     <Compile Include="Assets\useItem.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\New Folder" />
      <Folder Include="Assets\Scenes" />

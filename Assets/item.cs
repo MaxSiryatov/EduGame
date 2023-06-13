@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class item : MonoBehaviour
 {
+    private bool isFirst = true;
     public bool isActive;
     public GameObject pres, list;
     
@@ -17,6 +18,11 @@ public class item : MonoBehaviour
 
         if (Input.GetKey(KeyCode.E) & isActive)
         {
+            if (isFirst)
+            {
+                isFirst = false;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<useItem>().counter++;
+            }
             Time.timeScale = 0;
             list.SetActive(true);
         }

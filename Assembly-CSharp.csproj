@@ -45,6 +45,7 @@
      <Compile Include="Assets\item.cs" />
      <Compile Include="Assets\Movements.cs" />
      <Compile Include="Assets\useItem.cs" />
+     <Compile Include="Assets\isCorrect.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\New Folder" />
      <Folder Include="Assets\Scenes" />

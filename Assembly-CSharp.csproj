@@ -41,11 +41,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\isCorrect.cs" />
      <Compile Include="Assets\NewScript.cs" />
      <Compile Include="Assets\item.cs" />
      <Compile Include="Assets\Movements.cs" />
      <Compile Include="Assets\useItem.cs" />
-     <Compile Include="Assets\isCorrect.cs" />
+     <Compile Include="Assets\New Folder\matrix.cs" />
+     <Compile Include="Assets\New Folder\stick.cs" />
+     <Compile Include="Assets\New Folder\changed.cs" />
+     <Compile Include="Assets\changed3x3.cs" />
+     <Compile Include="Assets\matrix3x3.cs" />
+     <Compile Include="Assets\nextExercise.cs" />
+     <Compile Include="Assets\Open.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\New Folder" />
      <Folder Include="Assets\Scenes" />

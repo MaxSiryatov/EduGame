@@ -8,8 +8,9 @@ public class isCorrect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        matrix = new int[,];
-
+        matrix = new int[,]
+        {{4, 2}, {9, 0}};
+    }
         // Update is called once per frame
     void Update()
     {

@@ -25,11 +25,15 @@ public class useItem : MonoBehaviour
     {
         if (other.tag == "Item")
             other.GetComponent<item>().isActive = true;
+        else if (other.tag == "Usable")
+            other.GetComponent<Open>().isActive = true;
     }
 
     public void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Item")
             other.GetComponent<item>().isActive = false;
+        else if (other.tag == "Usable")
+            other.GetComponent<Open>().isActive = false;
     }
 }

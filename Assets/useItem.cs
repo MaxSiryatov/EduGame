@@ -26,7 +26,12 @@ public class useItem : MonoBehaviour
         if (other.tag == "Item")
             other.GetComponent<item>().isActive = true;
         else if (other.tag == "Usable")
-            other.GetComponent<Open>().isActive = true;
+        {
+            if (other.GetComponent<Open>())
+                other.GetComponent<Open>().isActive = true;
+            else if (other.GetComponent<MoveNextLvl>())
+                other.GetComponent<MoveNextLvl>().isActive = true;
+        }
     }
 
     public void OnTriggerExit2D(Collider2D other)
@@ -34,6 +39,11 @@ public class useItem : MonoBehaviour
         if (other.tag == "Item")
             other.GetComponent<item>().isActive = false;
         else if (other.tag == "Usable")
-            other.GetComponent<Open>().isActive = false;
+        {
+            if (other.GetComponent<Open>())
+                other.GetComponent<Open>().isActive = false;
+            else if (other.GetComponent<MoveNextLvl>())
+                other.GetComponent<MoveNextLvl>().isActive = false;
+        }
     }
 }

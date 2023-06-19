@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Open : MonoBehaviour
 {
-    public GameObject obj, obj1;
+    public GameObject obj, obj1, obj2;
 
     public bool isActive;
 
@@ -19,7 +19,7 @@ public class Open : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("Player").GetComponent<useItem>().counter >= 3)
         {
             obj1.SetActive(isActive);
-
+            obj2.SetActive(true);
 
             if (Input.GetKey(KeyCode.E) & isActive)
             {

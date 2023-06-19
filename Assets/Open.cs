@@ -21,7 +21,7 @@ public class Open : MonoBehaviour
             obj1.SetActive(isActive);
             obj2.SetActive(true);
 
-            if (Input.GetKey(KeyCode.E) & isActive)
+            if (Input.GetKey(KeyCode.E) && isActive)
             {
                 Time.timeScale = 0;
                 obj.SetActive(true);
